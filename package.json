@@ -1,0 +1,17 @@
+{
+  "name": "gulp-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "wat": "npx gulp sass"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
