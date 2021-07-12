@@ -4,9 +4,16 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "autoprefixer": "^9.7.4",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "gulp-postcss": "^8.0.0"
   },
+  "browserslist": [
+    "last 2 versions", 
+    "ie >= 11", 
+    "Android >= 4"
+  ],
   "devDependencies": {},
   "scripts": {
     "wat": "npx gulp sass"

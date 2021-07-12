@@ -1,7 +1,18 @@
+/* Sassのテスト */
 #id {
   width: 100%;
 
   p {
-    font-size: 10px
+    font-size: 10px;
+    margin-right: 1px;
   }
+
+  &_test {
+    margin: auto;
+  }
+}
+
+/* ベンダープレフィックスのテスト */
+bg {
+  background-image: linear-gradient(to bottom, #8BCC8E 0%, #A7F5AB 100%);
 }

@@ -1,7 +1,21 @@
+@charset "UTF-8";
+/* Sassのテスト */
 #id {
   width: 100%;
 }
 
 #id p {
   font-size: 10px;
+  margin-right: 1px;
+}
+
+#id_test {
+  margin: auto;
+}
+
+/* ベンダープレフィックスのテスト */
+bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8BCC8E), to(#A7F5AB));
+  background-image: -webkit-linear-gradient(top, #8BCC8E 0%, #A7F5AB 100%);
+  background-image: linear-gradient(to bottom, #8BCC8E 0%, #A7F5AB 100%);
 }
