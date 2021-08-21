@@ -1,18 +1,28 @@
-/* Sassのテスト */
-#id {
-  width: 100%;
-
-  p {
-    font-size: 10px;
-    margin-right: 1px;
-  }
-
-  &_test {
-    margin: auto;
-  }
+// functionの練習
+@function double($size) {
+  @return $size * 2px;
 }
 
-/* ベンダープレフィックスのテスト */
-bg {
-  background-image: linear-gradient(to bottom, #8BCC8E 0%, #A7F5AB 100%);
+// mixinの練習
+@mixin double_block1($size) {
+  font-size: $size * 2px;
+}
+
+// mixinの練習
+@mixin double_block2($size) {
+  font-size: $size * 2px;
+  @content
+}
+
+p {
+  font-size: double(20);
+}
+
+a {
+  @include double_block1(10);
+}
+
+span {
+  color: red;
+  @include double_block1(5);
 }
